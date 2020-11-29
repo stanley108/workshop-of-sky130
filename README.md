@@ -188,7 +188,8 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
 Skywater PDK Files
  The Skywater PDK files we are working with are described under $PDK_ROOT. There are three subdirectories needed for the workshop:
- 
+
+![alt text](https://gitlab.com/gab13c/openlane-workshop/-/blob/master/images/10.png) 
 
 Skywater-pdk – Contains all the foundry provided PDK related files
 Open_pdks – Contains scripts that are used to bridge the gap between closed-source and open-source PDK to EDA tool compatibility
