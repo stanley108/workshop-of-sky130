@@ -68,7 +68,7 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
       </ul>
     </li>
     <li>
-      <a href="#RTL-to-GDSII Introduction">RTL-to-GDSII Introduction</a>
+      <a href="#rtl2gds">RTL-to-GDSII Introduction</a>
       <ul>
         <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
         <li><a href="#invoking">Invoking OpenLANE</a></li>
@@ -131,7 +131,7 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<!-- RTL-to-GDSII Introduction -->
+<a name="rtl2gds></a>
 ## RTL-to-GDSII Introduction
 
 From conception to product, the ASIC design flow is an iterative process that is not static for every design. The details of the flow may change depending on ECO’s, IP requirements, DFT insertion, and SDC constraints, however the base concepts still remain. The flow can be broken down into 11 steps:
