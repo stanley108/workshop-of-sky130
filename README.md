@@ -93,7 +93,7 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
         <li><a href="#16-mask-cmos-process-steps">16 Mask CMOS Process Steps</a></li>
         <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
         <li><a href="#magic-key-features">Magic Key Features</a></li>
-        <li><a href="#device-inference">device-inference</a></li>
+        <li><a href="#device-inference">Device Inference</a></li>
         <li><a href="#drc-errors">DRC Errors</a></li>
         <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
         <li><a href="#spice-wrapper-for-simulation">Spice Wrapper for Simulation</a></li>
