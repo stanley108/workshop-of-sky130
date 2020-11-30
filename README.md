@@ -569,7 +569,7 @@ Generated cell LEF file:
 
 ![](/images/37.png)
 
-### How to Include New Cell in OpenLANE
+### Including Custom Cells in OpenLANE
 
 In order to include the new cells in OpenLANE we need to do some initial configuration:
   1. Fully characterize new cell with GUNA for specified corners
