@@ -92,6 +92,7 @@
       <ul>
         <li><a href="#power-distribution-network-generation">Power Distribution Network Generation</a></li>
         <li><a href="#global-and-detailed-routing">Global and Detailed Routing</a></li>
+        <li><a href="#spef-extraction">SPEF Extraction</a></li>
       </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
@@ -679,8 +680,9 @@ If DRC errors persist after routing the user has two options:
   1. Re-run routing with higher QoR settings
   2. Manually fix DRC errors specific in tritonRoute.drc file
 
+### SPEF Extraction
 
-
+After routing has been completed interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file. The SPEF extractor is not included within OpenLANE as of now. 
 
 
 
