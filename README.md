@@ -52,21 +52,51 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
     </li>
     <li>
       <a href="#rtl-to-gdsii-introduction">RTL to GDSII Introduction</a>
+    </li>
+    <li>
+      <a href="#workshop-introductiono">Workshop Introduction</a>
+    </li>
+    <li>
+      <a href="#day1">Day 1 - Inception of Open-Source EDA</a>
       <ul>
         <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
-        <li><a href="#invoking">Invoking OpenLANE</a></li>
-        <li><a href="#import">Package Importing</a></li>
-        <li><a href="#exampledesigns">Design Folder</a></li>
-        <li><a href="#dfhierarchy">Design Folder Hierarchy</a></li>
-        <li><a href="#config">Configuration Files</a></li>
-        <li><a href="#prep">Prepare Design</a></li>
-        <li><a href="#syn">Synthesis</a></li>
+        <li><a href="#invoking-openlane">Invoking OpenLANE</a></li>
+        <li><a href="#package-importing">Package Importing</a></li>
+        <li><a href="#design-folder">Design Folder</a></li>
+        <li><a href="#design-folder-hierarchy">Design Folder Hierarchy</a></li>
+        <li><a href="#configuration-files">Configuration Files</a></li>
+        <li><a href="#prepare-design">Prepare Design</a></li>
+        <li><a href="#synthesis">Synthesis</a></li>
       </ul>
     </li>
-    <li><a href="#workshopintro">Workshop Introduction</a></li>
-    <li><a href="#day1">Day 1 - Inception of Open-Source EDA</a></li>
-    <li><a href="#day2">License</a></li>
-    <li><a href="#day3">License</a></li>  
+    <li>
+      <a href="#day-2---floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
+      <ul>
+        <li><a href="#aspect-ratio-and-utilization-factor">Aspect Ratio and Utilization Factor</a></li>
+        <li><a href="#preplaced-cells">Preplaced Cells</a></li>
+        <li><a href="#decoupling-capacitors">Decouping Capacitors</a></li>
+        <li><a href="#power-planning">Power Planning</a></li>
+        <li><a href="#pin-placement">Pin Placement</a></li>
+        <li><a href="#floorplanning-with-openlane">Floorplanning with OpenLANE</a></li>
+        <li><a href="#viewing-floorplan-in-magic">Viewing Floorplan in Magic</a></li>
+        <li><a href="#placement">Placement</a></li>
+        <li><a href="#viewing-placement-in-magic">Viewing Placement in Magic</a></li>
+        <li><a href="#standard-cell-design-flow">Standard Cell Design Flow</a></li>
+        <li><a href="#standard-cell-characterization">Standard Cell Characterization</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#day-3-design---design-library-cell">Day 3 - Design Library Cell</a>
+      <ul>
+        <li><a href="#spice-simulations">Spice Simulations</a></li>
+        <li><a href="#switching-threshold-of-a-cmos-inverter">Switching Threshold of a CMOS Inverter</a></li>
+        <li><a href="#16-mask-cmos-process-steps"></a></li>
+        <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </li>  
     <li><a href="#day4">License</a></li>
     <li><a href="#day5">License</a></li>
     <li><a href="#contact">Contact</a></li>
