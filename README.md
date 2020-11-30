@@ -142,9 +142,9 @@ From conception to product, the ASIC design flow is an iterative process that is
 
       b. 	Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed
 
-  3. RTL Verification
+  3. RTL Verification - Behavioral verification of design
 
-  4. DFT Insertion  
+  4. DFT Insertion - Design-for-Test Circuit Insertion
 
   5. Logic Synthesis – Logic synthesis uses the RTL netlist to perform HDL technology mapping. The synthesis process is normally performed in two major steps:
 
