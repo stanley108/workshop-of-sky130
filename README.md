@@ -134,9 +134,11 @@ From conception to product, the ASIC design flow is an iterative process that is
 
       a. 	RTL Design – Stands for Register Transfer Level. It provides an abstraction of the digital   circuit using:
       
-        i. 	Combinational logic
-        ii. 	Registers
-        iii. 	Modules (IP’s or Soft Macros)
+      <ul>
+        <li>i. 	Combinational logic</li>
+        <li>ii. 	Registers</li>
+        <li>iii. 	Modules (IP’s or Soft Macros)</li>
+      </ul>
 
       b. 	Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed
 
