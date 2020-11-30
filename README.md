@@ -298,7 +298,7 @@ To view our floorplan in Magic we need to provide three files as input:
 
   ![](/images/13.png)
     
-    ![](/images/14.png)
+  ![](/images/14.png)
 
 
 ### Placement
