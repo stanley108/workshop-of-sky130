@@ -54,10 +54,10 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
       <a href="#rtl-to-gdsii-introduction">RTL to GDSII Introduction</a>
     </li>
     <li>
-      <a href="#workshop-introductiono">Workshop Introduction</a>
+      <a href="#workshop-introduction">Workshop Introduction</a>
     </li>
     <li>
-      <a href="#day1">Day 1 - Inception of Open-Source EDA</a>
+      <a href="#day-1-:-inception-of-open\-source-eda">Day 1 - Inception of Open-Source EDA</a>
       <ul>
         <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
         <li><a href="#invoking-openlane">Invoking OpenLANE</a></li>
@@ -243,8 +243,8 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
         - Magic - Performs DRC Checks & Antenna Checks
         - Netgen - Performs LVS Checks
 
-<!-- Day 1 - Inception of Open-Source EDA -->
-## Day 1 - Inception of Open-Source EDA
+<!-- Day 1 : Inception of Open-Source EDA -->
+## Day 1 : Inception of Open-Source EDA
 
 ### Skywater PDK Files
 
