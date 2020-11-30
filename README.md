@@ -92,13 +92,33 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
         <li><a href="#switching-threshold-of-a-cmos-inverter">Switching Threshold of a CMOS Inverter</a></li>
         <li><a href="#16-mask-cmos-process-steps"></a></li>
         <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#magic-key-features">Magic Key Features</a></li>
+        <li><a href="#device-inference">device-inference</a></li>
+        <li><a href="#drc-errors">DRC Errors</a></li>
+        <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
+        <li><a href="#spice-wrapper-for-simulation">Spice Wrapper for Simulation</a></li>
       </ul>
     </li>  
-    <li><a href="#day4">License</a></li>
-    <li><a href="#day5">License</a></li>
+    <li>
+      <a href="#day-4---pre---layout-timing-analysis-and-cts">Day 4 - Pre-Layout Timing Analysis and CTS</a>
+      <ul>
+        <li><a href="#an-introduction-to-lef-files">An Introduciton to LEF Files</a></li>
+        <li><a href="#standard-cell-pin-placement">Standard Cell Pin Placement</a></li>
+        <li><a href="#lef-generation-in-magic">LEF Generation in Magic</a></li>
+        <li><a href="#including-custom-cells-in-openlane">Including Custom Cells in OpenLANE</a></li>
+        <li><a href="#fixing-slack-violations">Fixing Slack Violations</a></li>
+        <li><a href="#clock-tree-synthesis">Clock Tree Synthesis</a></li>
+        <li><a href="#viewing-post-cts-netlist">Viewing Post-CTS Netlist</a></li>
+        <li><a href="#post-cts-sta-analysis">Post-CTS STA Analysis</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#day5----final-steps-in-rtl-to-gdsii">Day 5 - Final Steps in RTL to GDSII</a>
+      <ul>
+        <li><a href="#power-distribution-network-generation">Power Distribution Network Generation</a></li>
+        <li><a href="#global-and-detailed-routing">Global and Detailed Routing</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
