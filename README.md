@@ -513,32 +513,49 @@ OpenLANE will generate a new .def file containing information of our design afte
 
 ![](/images/47.png)
 
-Post-CTS STA Analysis
+### Post-CTS STA Analysis
+
 OpenLANE has the OpenROAD application integrated into its flow. The OpenROAD application has OpenSTA integrated into its flow. Therefore, we can perform STA analysis from within OpenLANE by invoking OpenROAD.
+
 To invoke OpenROAD from OpenLANE:
+![](/images/48.png)
 
 In OpenROAD the timing analysis is done by creating a .db database file. This database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD:
+![](/images/49.png)
 
 Note: Whenever the DEF file changes we need to recreate this .db file
-After .db generation users can perform tool configuration followed by reporting the propagated clock timing analysis:
 
-Day 5
+After .db generation users can perform tool configuration followed by reporting the propagated clock timing analysis:
+![](/images/50.png)
+
+##  Day 5
+
 After generating our clock tree network and verifying post routing STA checks we are ready to generate the power distribution network in OpenLANE:
-Power Distribution Network Generation
+![](/images/51.png)
+
+### Power Distribution Network Generation
+
 To generate the PDN in OpenLANE:
+![](/images/52.png)
 
 The PDN feature within OpenLANE will create:
-Power ring global to the entire core
-Power halo local to any preplaced cells
-Power straps to bring power into the center of the chip
-Power rails for the standard cells
+  1. Power ring global to the entire core
+  2. Power halo local to any preplaced cells
+  3. Power straps to bring power into the center of the chip
+  4. Power rails for the standard cells
+  ![](/images/53.png)
 
 Note: The pitch of the metal 1 power rails defines the height of the standard cells
-Global and Detailed Routing
+
+### Global and Detailed Routing
+
 OpenLANE uses TritonRoute as the routing engine for physical implementations of designs. Routing consists of two stages:
-Global Routing - Routing guides are generated for interconnects on our netlist defining what layers, and where on the chip each of the nets will be reputed
-Detailed Routing - Metal traces are iteratively laid across the routing guides to physically implement the routing guides
-To run routing in OpenLANE:
+
+  1. Global Routing - Routing guides are generated for interconnects on our netlist defining what layers, and where on the chip each of the nets will be reputed
+  2. Detailed Routing - Metal traces are iteratively laid across the routing guides to physically implement the routing guides
+
+### To run routing in OpenLANE:
+![](/images/54.png)
 
 
 
