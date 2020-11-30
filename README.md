@@ -188,34 +188,55 @@ Process Design Kit (PDK) is the interface between the CAD designers and the foun
 OpenLANE flow consists of several stages. By default, all flow steps are run in sequence. Each stage may consist of multiple sub-stages. OpenLANE can also be run interactively as shown here.
 
   1. Synthesis
+
     - Yosys - Performs RTL synthesis using GTech mapping
+
     - abc - Performs technology mappin to standard cells described in the PDK. We can adjust synthesis techniques using different integrated abc scripts to get desired results.
+
     - OpenSTA - Performs static timing analysis on the resulting netlist to generate timing reports
+    
     - Fault – Scan-chain insertion used for testing post fabrication. Supports ATPG and test patterns compaction.
 
   2. Floorplan and PDN
+
     - Init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
+
     - Ioplacer - Places the macro input and output ports
+
     - Pdn - Generates the power distribution network
+
     - Tapcell - Inserts welltap and decap cells in the floorplan
+    
     - Placement – Placement is done in two steps, one with global placement in which we place the designs across the chip, but they will not be legal placement with some standard cells overlapping each other, to fix this we perform a detailed placement which legalizes the design and ensures they fit in the standard cell rows
+
     - RePLace - Performs global placement
+
     - Resizer - Performs optional optimizations on the design
+
     - OpenPhySyn - Performs timing optimizations on the design
+
     - OpenDP - Perfroms detailed placement to legalize the globally placed components
 
   3. CTS
+
     - TritonCTS - Synthesizes the clock distribution network
+
   4. Routing
+
     - FastRoute - Performs global routing to generate a guide file for the detailed router
+
     - TritonRoute - Performs detailed routing from global routing guides
+
     - SPEF-Extractor - Performs SPEF extraction that include parasitic information
 
   5. GDSII Generation
+
     - Magic - Streams out the final GDSII layout file from the routed def
 
   6. Checks
+
     - Magic - Performs DRC Checks & Antenna Checks
+
     - Netgen - Performs LVS Checks
 
 <!-- Day 1 Inception of Open Source EDA -->
