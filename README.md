@@ -1,7 +1,5 @@
 # OpenLANE Workshop
 
-VSD Workshop performing the full RTL to GDSII flow using the open-source tool OpenLANE and the open-source PDK provided by Skywater.
-
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
