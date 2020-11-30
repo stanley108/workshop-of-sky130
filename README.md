@@ -57,7 +57,7 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
       <a href="#workshop-introduction">Workshop Introduction</a>
     </li>
     <li>
-      <a href="#day-1-:-inception-of-open%e2%80%93source-eda">Day 1 - Inception of Open-Source EDA</a>
+      <a href="#day-1-:-inception-of-open%e2%80%93source-eda">Day 1 : Inception of Open-Source EDA</a>
       <ul>
         <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
         <li><a href="#invoking-openlane">Invoking OpenLANE</a></li>
