@@ -196,6 +196,7 @@ Skywater PDK Files
   3. Sky130A – The open-source compatible PDK files
 
 ### Invoking OpenLane
+
 ![](/images/2.png)
 
   - ./flow.tcl is the script which runs the OpenLANE flow
@@ -204,13 +205,16 @@ Skywater PDK Files
 
 ### Package Importing
 Different software dependencies are needed to run OpenLANE. To import these into the OpenLANE tool we need to run:
+
 ![](/images/3.png)
 
 ### User-defined and Example Designs
 All designs run within OpenLANE are extracted from the openlane/designs folder:
+
 ![](/images/4.png)
 
 ### Design Folder Hierarchy
+
 ![](/images/5.png)
 
 Each design hierarchy comes with two distinct components:
@@ -218,27 +222,34 @@ Each design hierarchy comes with two distinct components:
   2. Config.tcl files - Design specific configuration switches used by OpenLANE
 
 An example of a configuration file is given:
+
   ![](/images/6.png)
 
 ### Prepare Design
 Prep is used to make file structure for our design. To set this up do:
+
   ![](/images/7.png)
 
 After running this look in the openlane/design/picro32a folder and you will see there is a new directory structure created in this folder under the runs folder so to enable OpenLANE flow:
+
   ![](/images/8.png)
 
 The config.tcl file shown in this folder contains all the parameters used by OpenLANE for this specific run.
 
 In addition, preparing the design in OpenLANE merges the technology LEF and cell LEF information. Technology LEF information contains layer definitions and a set of restricted design rules needed for PnR flow. The cell LEF contains obstruction information of each standard cell needed to minimize DRC errors during PnR flow:
+
   ![](/images/9.png)
 
 ### Synthesis
+
 To run synthesis:
+
   ![](/images/10.png)
 
 Note: Ensure the WNS is an acceptable number, if not please adjust the clock period to fix STA errors.
 
 ##  Day 2 - Chip Floorplanning
+
 In Floorplanning we typically set the:
   1. 	Die Area
   2. 	Core Area
@@ -249,25 +260,33 @@ In Floorplanning we typically set the:
   7. 	Place input and output pins
 
 ### Aspect Ratio and Utilization Factor
+
 Two key descriptions of a floorplan are utilization and aspect ratio. The amount of area of the die core the standard cells are taking up is called utilization. Normally we go for 50-70% utilization to, or utilization factor of 0.5-0.7. Keeping within this range allows for optimization of placement and realizable routing of a system. Aspect ratio can specify the shape of your chip by the height of the core area divided by the width of the core area. An aspect ratio of 1 discribes the chip as a square.
 
 ### Preplaced Cells
+
 Preplaced cells, or MACRO’s, are important to enable hierarchical PnR flow. Preplaced cells enable VLSI engineers to granularize a larger design. In floorplanning we define locations and blockages for preplaced cells. Blockages are needed to ensure no standard cells are mapped where the placeplaced cells are located.
 
 ### Decoupling Capacitors
+
 Decoupling capacitors are placed local to preplaced cells during Floorplanning. Voltage drops associated with interconnect wires can heavily affect our noise margin or put it into an indeterminate state. Decoupling capacitor is a big capacitor located next to the macros to fix this problem. The capacitor will charge up to the power supply voltage over time and it will work as a charge reservoir when a transition is needed by the circuit instead of the charge coming from the power supply. Therefore it “decouples” the circuit from the main supply. The capacitor acts like the power supply.
 
 ### Power Planning
+
 Power planning during the Floorplanning phase is essential to lower noise in digital circuits attributed to voltage droop and ground bounce. Coupling capacitance is formed between interconnect wires and the substrate which needs to be charged or discharged to represent either logic 1 or logic 0. When a transition occurs on a net, charge associated with coupling capacitors may be dumped to ground. If there are not enough ground taps charge will accumulate at the tap and the ground line will act like a large resistor, raising the ground voltage and lowering our noise margin. To bypass this problem a robust PDN with many power strap taps are needed to lower the resistance associated with the PDN.
 
 ### Pin Placement
+
 Pin placement is an essential part of floorplanning to minimize buffering and improve power consumption and timing delays. The goal of pin placement is to use the connectivity information of the HDL netlist to determine where along the I/O ring a specific pin should be placed. In many cases, optimal pin placement will be accompanied with less buffering and therefore less power consumption. After pin placement is formed we need to place logical cell blockages along the I/O ring to discriminate between the core area and I/O area:
 
 ### Floorplanning with OpenLANE
+
 To run floorplan in OpenLANE:
+
   ![](/images/11.png)
 
 As with all other stages, the floorplanning will be run according to configuration settings in the design specific config.tcl file. The output the the floorplanning phase is a DEF file which describes core area and placement of standard cell SITES:
+
   ![](/images/12.png)
 
 ### Viewing Floorplan in Magic
@@ -278,6 +297,7 @@ To view our floorplan in Magic we need to provide three files as input:
   3. Merged LEF file
 
     ![](/images/13.png)
+    
     ![](/images/14.png)
 
 
