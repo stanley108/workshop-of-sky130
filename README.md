@@ -68,9 +68,9 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
       </ul>
     </li>
     <li>
-      <a href="#RTL2GDS">RTL-to-GDSII Introduction</a>
+      <a href="#RTL-to-GDSII Introduction">RTL-to-GDSII Introduction</a>
       <ul>
-        <li><a href="#pdkfiles">Skywater PDK Files</a></li>
+        <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
         <li><a href="#invoking">Invoking OpenLANE</a></li>
         <li><a href="#import">Package Importing</a></li>
         <li><a href="#exampledesigns">Design Folder</a></li>
