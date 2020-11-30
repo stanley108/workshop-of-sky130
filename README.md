@@ -456,7 +456,7 @@ To enable efficient description of the varying waveforms a single parameter call
   - Contacts & local interconnect Creation : SiO2 removed using HF etch. Titanium deposited using sputtering.
   - Higher Level metal layer formation : Upper layers of metals deposited.
 
-### Magic Layout Viewer of Inverter Standard Cell
+### Magic Layout View of Inverter Standard Cell
 
 Refer to: https://github.com/nickson-jose/vsdstdcelldesign for cell files.
 
