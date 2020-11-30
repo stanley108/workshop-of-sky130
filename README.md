@@ -491,7 +491,7 @@ Run the what command in the tkcon window:
 
 ![](/images/23.png)
 
-### DRC Erros
+### DRC Errors
 
 DRC errors in magic will be highlighted with white dotted lines:
 
