@@ -589,7 +589,7 @@ To invoke OpenSTA with the configuration file:
 
 The delay of this cell is large due to a high load capacitance due to high fanout. To fix this problem we can re-run synthesis within OpenLANE after reconfiguring the maximum fanout load value.
 
-###Cell Replacement Example:
+### Cell Replacement Example:
 
 ![](/images/43.png)
 
@@ -689,9 +689,7 @@ After routing has been completed interconnect parasitics can be extracted to per
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Grant Brown - u1249940@umail.utah.edu
 
 
 
