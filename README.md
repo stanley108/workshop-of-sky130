@@ -675,6 +675,11 @@ OpenLANE uses TritonRoute as the routing engine for physical implementations of 
 
 ![](/images/55.png)
 
+If DRC errors persist after routing the user has two options:
+  1. Re-run routing with higher QoR settings
+  2. Manually fix DRC errors specific in tritonRoute.drc file
+
+
 
 
 
