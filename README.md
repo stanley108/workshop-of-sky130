@@ -213,8 +213,8 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
     - Magic - Performs DRC Checks & Antenna Checks
     - Netgen - Performs LVS Checks
 
-<!-- Day 1 : Inception of Open Source EDA -->
-## Day 1 : Inception of Open Source EDA
+<!-- Day 1 Inception of Open Source EDA -->
+## Day 1 Inception of Open Source EDA
 
 ### Skywater PDK Files
 
