@@ -59,7 +59,7 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
     <li>
       <a href="#day-1-:-inception-of-open%e2%80%93source-eda">Day 1 : Inception of Open-Source EDA</a>
       <ul>
-        <li><a href="#Skywater-PDK-Files">Skywater PDK Files</a></li>
+        <li><a href="#skywater-pdk-files">Skywater PDK Files</a></li>
         <li><a href="#invoking-openlane">Invoking OpenLANE</a></li>
         <li><a href="#package-importing">Package Importing</a></li>
         <li><a href="#design-folder">Design Folder</a></li>
@@ -269,7 +269,7 @@ Different software dependencies are needed to run OpenLANE. To import these into
 
 ![](/images/3.png)
 
-### User-defined and Example Designs
+### Design Folder
 All designs run within OpenLANE are extracted from the openlane/designs folder:
 
 ![](/images/4.png)
