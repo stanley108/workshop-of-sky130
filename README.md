@@ -559,7 +559,7 @@ Viewing the grid we can ensure our pin placement is optimized for PnR flow:
 
 ![](/images/35.png)
 
-### LEF Generation from Magic
+### LEF Generation in Magic
 
 Magic allows users to generate cell LEF information directly from the Magic terminal. To generate the cell LEF file from Magic perform:
 
