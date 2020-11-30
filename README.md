@@ -32,7 +32,7 @@
       <a href="#workshop-introduction">Workshop Introduction</a>
     </li>
     <li>
-      <a href="#day-1-:-inception-of-open%e2%80%93source-eda">Day 1 : Inception of Open-Source EDA</a>
+      <a href="#day-1-:-inception-of-open-source-eda">Day 1 : Inception of Open Source EDA</a>
       <ul>
         <li><a href="#skywater-pdk-files">Skywater PDK Files</a></li>
         <li><a href="#invoking-openlane">Invoking OpenLANE</a></li>
@@ -45,7 +45,7 @@
       </ul>
     </li>
     <li>
-      <a href="#day-2---floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
+      <a href="#day-2-:-floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
       <ul>
         <li><a href="#aspect-ratio-and-utilization-factor">Aspect Ratio and Utilization Factor</a></li>
         <li><a href="#preplaced-cells">Preplaced Cells</a></li>
