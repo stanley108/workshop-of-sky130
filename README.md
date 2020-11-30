@@ -189,34 +189,25 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 
   1. Synthesis
 
-    - Yosys - Performs RTL synthesis using GTech mapping
-
-    - abc - Performs technology mappin to standard cells described in the PDK. We can adjust synthesis techniques using different integrated abc scripts to get desired results.
-
-    - OpenSTA - Performs static timing analysis on the resulting netlist to generate timing reports
-    
-    - Fault – Scan-chain insertion used for testing post fabrication. Supports ATPG and test patterns compaction.
+  <ul>
+      <li> Yosys - Performs RTL synthesis using GTech mapping</li>
+      <li>abc - Performs technology mappin to standard cells described in the PDK. We can adjust synthesis techniques using different integrated abc scripts to get desired results</li>
+      <li>OpenSTA - Performs static timing analysis on the resulting netlist to generate timing reports</li>
+      <li>Fault – Scan-chain insertion used for testing post fabrication. Supports ATPG and test patterns compaction</li>
+  </ul>
 
   2. Floorplan and PDN
-
-    - Init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
-
-    - Ioplacer - Places the macro input and output ports
-
-    - Pdn - Generates the power distribution network
-
-    - Tapcell - Inserts welltap and decap cells in the floorplan
-    
-    - Placement – Placement is done in two steps, one with global placement in which we place the designs across the chip, but they will not be legal placement with some standard cells overlapping each other, to fix this we perform a detailed placement which legalizes the design and ensures they fit in the standard cell rows
-
-    - RePLace - Performs global placement
-
-    - Resizer - Performs optional optimizations on the design
-
-    - OpenPhySyn - Performs timing optimizations on the design
-
-    - OpenDP - Perfroms detailed placement to legalize the globally placed components
-
+  <ul>
+      <li>Init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)</li>
+      <li>Ioplacer - Places the macro input and output ports</li>
+      <li>PDN - Generates the power distribution network</li>
+      <li>Tapcell - Inserts welltap and decap cells in the floorplan</li>
+      <li>Placement – Placement is done in two steps, one with global placement in which we place the designs across the chip, but they will not be legal placement with some standard cells overlapping each other, to fix this we perform a detailed placement which legalizes the design and ensures they fit in the standard cell rows</li>
+      <li>RePLace - Performs global placement</li>
+      <li>Resizer - Performs optional optimizations on the design</li>
+      <li>OpenPhySyn - Performs timing optimizations on the design</li>
+      <li>OpenDP - Perfroms detailed placement to legalize the globally placed components</li>
+  </ul>
   3. CTS
 
     - TritonCTS - Synthesizes the clock distribution network
