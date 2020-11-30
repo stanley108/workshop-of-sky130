@@ -90,7 +90,7 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
       <ul>
         <li><a href="#spice-simulations">Spice Simulations</a></li>
         <li><a href="#switching-threshold-of-a-cmos-inverter">Switching Threshold of a CMOS Inverter</a></li>
-        <li><a href="#16-mask-cmos-process-steps"></a></li>
+        <li><a href="#16-mask-cmos-process-steps">16 Mask CMOS Process Steps</a></li>
         <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
         <li><a href="#magic-key-features">Magic Key Features</a></li>
         <li><a href="#device-inference">device-inference</a></li>
@@ -445,7 +445,7 @@ The voltages at which the switch between the modes of operation happens is depen
 
 To enable efficient description of the varying waveforms a single parameter called switching threshold is used. Switching threshold is defined at the intersection of Vin = Vout. A perfectly symmetrical device will have a switching threshold such that Vin = Vout = VDD/2. 
 
-### 16-Mask CMOS Process Steps
+### 16 Mask CMOS Process Steps
 
   - Substrate Selection : Selection of base layer on which other regions will be formed.
   - Create an active region for transistors : SiO2 and Si3N2 deposited. Pockets created using photoresist and lithography.
