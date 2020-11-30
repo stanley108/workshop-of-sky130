@@ -302,27 +302,38 @@ To view our floorplan in Magic we need to provide three files as input:
 
 
 ### Placement
+
 The next step in the Digital ASIC design flow after floorplanning is placement. The synthesized netlist has been mapped to standard cells and floorplanning phase has determined the standard cells rows, enabling placement. OpenLANE does placement in two stages:
+
   1. Global Placement - Optimized but not legal placement. Optimization works to reduce wirelength by reducing half parameter wirelength
   2. Detailed Placement - Legalizes placement of cells into standard cell rows while adhering to global placement
 
 To do placement in OpenLANE:
+
   ![](/images/15.png)
 
 For placement to converge the overflow value needs to be converging to 0. At the end of placement cell legalization will be reported:
+
   ![](/images/16.png)
 
 ### Viewing Placement in Magic
+
 To view placement in Magic the command mirrors viewing floorplanning:
+
   ![](/images/17.png)
+  
+  ![](/images/18.png)
 
 ### Standard Cell Design Flow
+
 Cell design is done in 3 parts:
+
   1. Inputs - PDKs (Process design kits), DRC & LVS rules, SPICE models, library & user-defined specs.
   2. Design Steps - Design steps of cell design involves Circuit Design, Layout Design, Characterization. The software GUNA used for characterization. The characterization can be classified as Timing characterization, Power characterization and Noise characterization.
   3. Outputs - Outputs of the Design are CDL (Circuit Description Language), GDSII, LEF, extracted Spice netlist (.cir), timing, noise, power.libs, function.
 
 ### Standard Cell Characterization
+
 Standard Cell Libraries consist of cells with different functionality/drive strengths. These cells need to be characterized by liberty files to be used by synthesis tools to determine optimal circuit arrangement. The open-source software GUNA is used for characterization.
 
 Characterization is a well-defined flow consisting of the following steps:
@@ -336,11 +347,15 @@ Characterization is a well-defined flow consisting of the following steps:
   7. Provide necessary simulation commands 
 
 ## Day 3 
+
 OpenLANE has the benefit of allowing changes to internal switches of the ASIC design flow on the fly. This allows users to experiment with floorplanning and placement without having to reinvoke the tool.
 
 ### Spice Simulations
+
 To simulate standard cells spice deck wrappers will need to be created around our model files. 
-  - SPICE deck will comprise of:
+
+SPICE deck will comprise of:
+
   - Model include statements
   - Component connectivity, including substrate taps
   - Output load capacitance
@@ -349,6 +364,7 @@ To simulate standard cells spice deck wrappers will need to be created around ou
   - Simulation commands
 
 To plot the output waveform of the spice deck we will use ngspice. The steps to run the simulation on ngpice are as follows:
+
   1. Source the .cir spice deck file
   2. Run the spice file by: run
   3. Run: setplot → allows you to view any plots possible from the simulations specified in the spice deck
@@ -359,6 +375,7 @@ To plot the output waveform of the spice deck we will use ngspice. The steps to 
 ### Switching Threshold of a CMOS Inverter 
 
 CMOS cells have three modes of operation:
+
   - Cutoff - No inversion
   - Triode - Inversion but no pinchoff in channel
   - Saturation - Inversion and pinchoff in channel
@@ -383,15 +400,19 @@ To enable efficient description of the varying waveforms a single parameter call
 Refer to: https://github.com/nickson-jose/vsdstdcelldesign for cell files.
 
 For easier access to critical files within the lab I suggest doing the following:
+
   1. Sudo pluma /etc/environment (can open with preferred document viewer)
   2. Add the following variables to the file:
-    ![](/images/18.png)
+
+    ![](/images/19.png)
 
 Replace the file locations as specified in your user hierarchy
 
 To invoke Magic:
-  ![](/images/19.png)
+
   ![](/images/20.png)
+
+  ![](/images/21.png)
 
 ### Magic Key Features:
 
@@ -402,10 +423,12 @@ Continuous DRC
 ### Device Inference
 
 Select the specific layer/device by hovering over the object and pressing, s, iteratively, until you traverse the hierarchy to the specified object:
-![](/images/21.png)
+
+![](/images/22.png)
 
 Run the what command in the tkcon window:
-![](/images/22.png)
+
+![](/images/23.png)
 
 ### DRC Erros
 
