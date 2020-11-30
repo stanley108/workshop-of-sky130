@@ -404,7 +404,7 @@ For easier access to critical files within the lab I suggest doing the following
   1. Sudo pluma /etc/environment (can open with preferred document viewer)
   2. Add the following variables to the file:
 
-    ![](/images/19.png)
+  ![](/images/19.png)
 
 Replace the file locations as specified in your user hierarchy
 
