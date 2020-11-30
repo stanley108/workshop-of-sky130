@@ -169,6 +169,8 @@ Standard Cells – Standard cells are fixed height and a multiple of unit size w
 The Skywater 130nm PDK uses 6 metal layers to perform CTS, PDN generation, and interconnect routing.
 Shown below is an example of a base RTL to GDS flow in ASIC design:
 
+![](/images/asic_flow.png)
+
 <!-- Workshop Introduction -->
 ## Workshop Introduction
 
