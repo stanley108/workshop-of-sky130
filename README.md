@@ -88,7 +88,7 @@
       </ul>
     </li>
     <li>
-      <a href="#day5-final-steps-in-rtl-to-gdsii">Day 5 Final Steps in RTL to GDSII</a>
+      <a href="#day-5-final-steps-in-rtl-to-gdsii">Day 5 Final Steps in RTL to GDSII</a>
       <ul>
         <li><a href="#power-distribution-network-generation">Power Distribution Network Generation</a></li>
         <li><a href="#global-and-detailed-routing">Global and Detailed Routing</a></li>
