@@ -59,9 +59,6 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -70,10 +67,25 @@ VSD Workshop performing the full RTL to GDSII flow using the open-source tool Op
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li>
+      <a href="#RTL2GDS">RTL-to-GDSII Introduction</a>
+      <ul>
+        <li><a href="#pdkfiles">Skywater PDK Files</a></li>
+        <li><a href="#invoking">Invoking OpenLANE</a></li>
+        <li><a href="#import">Package Importing</a></li>
+        <li><a href="#exampledesigns">Design Folder</a></li>
+        <li><a href="#dfhierarchy">Design Folder Hierarchy</a></li>
+        <li><a href="#config">Configuration Files</a></li>
+        <li><a href="#prep">Prepare Design</a></li>
+        <li><a href="#syn">Synthesis</a></li>
+      </ul>
+    </li>
+    <li><a href="#workshopintro">Workshop Introduction</a></li>
+    <li><a href="#day1">Day 1 - Inception of Open-Source EDA</a></li>
+    <li><a href="#day2">License</a></li>
+    <li><a href="#day3">License</a></li>  
+    <li><a href="#day4">License</a></li>
+    <li><a href="#day5">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -121,7 +133,8 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = 'ENTER YOUR API';
    ```
 
-### RTS-to-GDSII Introduction
+<!-- RTL-to-GDSII Introduction -->
+## RTL-to-GDSII Introduction
 
 From conception to product, the ASIC design flow is an iterative process that is not static for every design. The details of the flow may change depending on ECO’s, IP requirements, DFT insertion, and SDC constraints, however the base concepts still remain. The flow can be broken down into 11 steps:
     1. Architectural Design – A system engineer will provide the VLSI engineer with specifications for the system that are determined through physical constraints. The VLSI engineer will be required to design a circuit that meets these constraints at a microarchitecture modeling level.
@@ -145,7 +158,9 @@ Standard Cells – Standard cells are fixed height and a multiple of unit size w
 The Skywater 130nm PDK uses 6 metal layers to perform CTS, PDN generation, and interconnect routing.
 Shown below is an example of a base RTL to GDS flow in ASIC design:
 
+<!-- Workshop Introduction -->
 ## Workshop Introduction
+
 The inputs to the ASIC design flow are:
 
     - Process Design Rules: DRC, LVS, PEX
@@ -184,10 +199,12 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
         - Magic - Performs DRC Checks & Antenna Checks
         - Netgen - Performs LVS Checks
 
-## Day 1
+<!-- Day 1 - Inception of Open-Source EDA -->
+## Day 1 - Inception of Open-Source EDA
 
-Skywater PDK Files
- The Skywater PDK files we are working with are described under $PDK_ROOT. There are three subdirectories needed for the workshop:
+### Skywater PDK Files
+
+The Skywater PDK files we are working with are described under $PDK_ROOT. There are three subdirectories needed for the workshop:
 
 ![](/images/1.png)
 
