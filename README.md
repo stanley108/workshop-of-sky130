@@ -197,6 +197,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
   </ul>
 
   2. Floorplan and PDN
+
   <ul>
       <li>Init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)</li>
       <li>Ioplacer - Places the macro input and output ports</li>
@@ -210,25 +211,31 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
   </ul>
   3. CTS
 
-    - TritonCTS - Synthesizes the clock distribution network
+  <ul>
+      <li>TritonCTS - Synthesizes the clock distribution network</li>
+  </ul>
 
   4. Routing
 
-    - FastRoute - Performs global routing to generate a guide file for the detailed router
-
-    - TritonRoute - Performs detailed routing from global routing guides
-
-    - SPEF-Extractor - Performs SPEF extraction that include parasitic information
+  <ul>
+      <li>FastRoute - Performs global routing to generate a guide file for the detailed router
+      </li>
+      <li>TritonRoute - Performs detailed routing from global routing guides</li>
+      <li>SPEF-Extractor - Performs SPEF extraction that include parasitic information</li>
+  </ul>
 
   5. GDSII Generation
 
-    - Magic - Streams out the final GDSII layout file from the routed def
+  <ul>
+      <li>Magic - Streams out the final GDSII layout file from the routed def</li>
+  </ul>
 
   6. Checks
 
-    - Magic - Performs DRC Checks & Antenna Checks
-
-    - Netgen - Performs LVS Checks
+  <ul>
+      <li>Magic - Performs DRC Checks & Antenna Checks</li>
+      <li>Netgen - Performs LVS Checks </li>
+  </ul>
 
 <!-- Day 1 Inception of Open Source EDA -->
 ## Day 1 Inception of Open Source EDA
