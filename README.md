@@ -132,13 +132,13 @@ From conception to product, the ASIC design flow is an iterative process that is
 
   2. RTL Design/Behavioral Modeling – RTL design and behavioral modeling are performed with a hardware description language (HDL). EDA tools will use the HDL to perform mapping of higher-level components to the transistor level needed for physical implementation. HDL modeling is normally performed using either Verilog or VHDL. One of two design methods may be employed while creating the HDL of a microarchitecture:
 
-    a. 	RTL Design – Stands for Register Transfer Level. It provides an abstraction of the digital   circuit using:
+      a. 	RTL Design – Stands for Register Transfer Level. It provides an abstraction of the digital   circuit using:
       
-     i. 	Combinational logic
-     ii. 	Registers
-      iii. 	Modules (IP’s or Soft Macros)
+        i. 	Combinational logic
+        ii. 	Registers
+        iii. 	Modules (IP’s or Soft Macros)
 
-    b. 	Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed
+      b. 	Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed
 
   3. RTL Verification
 
